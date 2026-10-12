@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard — Nexora AI</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="/" aria-label="Nexora AI home">
+          <img src="/favicon.svg" width="32" height="32" alt="" />
+          Nexora <span>AI</span>
+        </a>
+        <div class="nav-actions">
+          <button type="button" class="btn btn-ghost" data-logout>Log out</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="dash container">
+      <div class="dash-head load-in">
+        <div>
+          <p class="eyebrow" data-role-label>Your dashboard</p>
+          <h1>Welcome, <em data-first-name>…</em></h1>
+        </div>
+        <a class="btn btn-ghost" href="/">Back to home</a>
+      </div>
+
+      <div class="dash-grid">
+        <section class="panel load-in d1" aria-labelledby="tools-h" style="padding: 28px">
+          <h2 id="tools-h">Your tools</h2>
+          <div class="tool-list">
+            <div class="tool">
+              <div class="tile-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5zM4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5" stroke-linejoin="round"/></svg></div>
+              <div><h3>Study Assistant</h3><p>Notes, flashcards &amp; quizzes</p><span class="soon">Coming soon</span></div>
+            </div>
+            <div class="tool">
+              <div class="tile-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16zM13.5 6.5l4 4" stroke-linejoin="round"/></svg></div>
+              <div><h3>Writing Assistant</h3><p>Draft, edit &amp; cite</p><span class="soon">Coming soon</span></div>
+            </div>
+            <div class="tool">
+              <div class="tile-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5zM6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5" stroke-linejoin="round"/></svg></div>
+              <div><h3>AI Teachers</h3><p>Six subject tutors</p><span class="soon">Coming soon</span></div>
+            </div>
+            <div class="tool">
+              <div class="tile-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg></div>
+              <div><h3>Translator</h3><p>100+ languages</p><span class="soon">Coming soon</span></div>
+            </div>
+            <div class="tool">
+              <div class="tile-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z" stroke-linejoin="round"/><path d="M8 10h8M8 13h5"/></svg></div>
+              <div><h3>Language Learning</h3><p>A1–C2 courses</p><span class="soon">Coming soon</span></div>
+            </div>
+            <div class="tool" data-teacher-only hidden>
+              <div class="tile-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 3h14v18H5zM9 8h6M9 12h6M9 16h3" stroke-linejoin="round"/></svg></div>
+              <div><h3>Teacher Tools</h3><p>Lesson plans &amp; rubrics</p><span class="soon">Coming soon</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel profile load-in d2" aria-labelledby="profile-h">
+          <h2 id="profile-h">Your account</h2>
+          <dl data-profile>
+            <dt>Name</dt><dd><span class="skeleton" style="width: 120px; margin-left: auto"></span></dd>
+            <dt>Email</dt><dd><span class="skeleton" style="width: 160px; margin-left: auto"></span></dd>
+            <dt>Account type</dt><dd><span class="skeleton" style="width: 70px; margin-left: auto"></span></dd>
+            <dt>Language</dt><dd><span class="skeleton" style="width: 80px; margin-left: auto"></span></dd>
+            <dt>Plan</dt><dd><span class="skeleton" style="width: 50px; margin-left: auto"></span></dd>
+          </dl>
+          <button type="button" class="btn btn-ghost" style="width: 100%" data-logout>Log out</button>
+        </section>
+      </div>
+    </main>
+
+    <script type="module" src="/src/dashboard.ts"></script>
+  </body>
+</html>
